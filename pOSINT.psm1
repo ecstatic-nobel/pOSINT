@@ -160,6 +160,9 @@ function Request-Osint {
     )
     
     Begin {
+        $CurrentSecurityProtocol = [Net.ServicePointManager]::SecurityProtocol
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls12
+
         $Method  = "GET"
         $Body    = $Null
         $Timeout = 30
@@ -254,6 +257,7 @@ function Request-Osint {
     }
 
     End {
+        [Net.ServicePointManager]::SecurityProtocol = $CurrentSecurityProtocol
         Write-Verbose "`nComplete"
     }
 }
