@@ -40,7 +40,12 @@ Check the following sources' help page to see special mappings:
 - Hybrid-Analysis  
 - ThreatMiner  
 
-EXAMPLES (***DO NOT USE Format-List WHEN ACCESSING PROPERTIES***):  
+Remove the module:  
+```powershell
+Remove-Module pOSINT
+```
+
+### Examples (***DO NOT USE Format-List WHEN ACCESSING PROPERTIES***):  
 ```powershell
 Search-AlienVault -Endpoint IPv4 -Section general -Query 187.233.152.78 | Format-List
 Search-Censys -Uid <UID> -Secret <SECRET> -Endpoint search -Index certificates -Query pandorasong.com | Format-List
@@ -64,10 +69,4 @@ Search-VirusTotal -ApiKey <APIKEY> -Endpoint ip-address -Query 99.84.254.97 | Fo
 ```
 ![pOSINT](https://raw.githubusercontent.com/ecstatic-nobel/pOSINT/master/static/assets/pOSINT.gif)  
 
-Remove the module:  
-```powershell
-Remove-Module pOSINT
-```
-
 Please fork, create merge requests, and help make this better.  
-
