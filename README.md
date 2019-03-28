@@ -45,7 +45,7 @@ Remove the module:
 Remove-Module pOSINT
 ```
 
-### Examples (***DO NOT USE Format-List WHEN ACCESSING PROPERTIES***):  
+### Examples:    
 ```powershell
 Search-AlienVault -Endpoint IPv4 -Section general -Query 187.233.152.78 | Format-List
 Search-Censys -Uid <UID> -Secret <SECRET> -Endpoint search -Index certificates -Query pandorasong.com | Format-List
@@ -68,5 +68,8 @@ Search-Urlscan -Query 4ef1c08fe44a8d1e1c8ef214e7ed63a318663e926860702076bc6234fd
 Search-VirusTotal -ApiKey <APIKEY> -Endpoint ip-address -Query 99.84.254.97 | Format-List
 ```
 ![pOSINT](https://raw.githubusercontent.com/ecstatic-nobel/pOSINT/master/static/assets/pOSINT.gif)  
+
+### Things to Know  
+- Do not use Format-List when accessing properties  
 
 Please fork, create merge requests, and help make this better.  
