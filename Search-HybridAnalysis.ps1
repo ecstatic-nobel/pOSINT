@@ -6,7 +6,7 @@
     Gather Open-Source Intelligence from HybridAnalysis using PowerShell.
 
     .EXAMPLE
-    Search-HybridAnalysis -ApiKey <APIKEY> -Secret <SECRET> -Endpoint hash -Name hash -Query 116858001ed50d8dd02b353473a139b98820dcf620c9e70e8a51c49f62cc6581 | Format-List
+    Search-HybridAnalysis -ApiKey <APIKEY> -Endpoint hash -Name hash -Query 116858001ed50d8dd02b353473a139b98820dcf620c9e70e8a51c49f62cc6581 | Format-List
 
     job_id                    : 5c8c08950288388746c6f986
     environment_id            : 110
@@ -90,8 +90,6 @@ function Search-HybridAnalysis {
     param(
         [Parameter(Mandatory=$true)]
         [string]$ApiKey,
-        [Parameter(Mandatory=$true)]
-        [string]$Secret,
 
         [Parameter(Mandatory=$true)]
         [ValidateSet('hash', 'terms')]
