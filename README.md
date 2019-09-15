@@ -51,6 +51,7 @@ Search-AlienVault -Endpoint IPv4 -Section general -Query 187.233.152.78 | Format
 Search-Censys -Uid <UID> -Secret <SECRET> -Endpoint search -Index certificates -Query pandorasong.com | Format-List
 Search-Crtsh -Query jotugaedorm.com -Wildcard | Format-List
 Search-Cymon -Endpoint ip -Query 195.123.237.120 | Format-List
+Search-EmailRep -Query bill@microsoft.com | Format-List
 Search-GreyNoise -Endpoint list | Format-List
 Search-GreyNoise -Endpoint tag -Query ADB_WORM | Format-List
 Search-GreyNoise -Endpoint ip -Query 123.193.145.85 | Format-List
