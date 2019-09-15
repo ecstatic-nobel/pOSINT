@@ -38,7 +38,7 @@ function Search-Crtsh {
             $Query = "%25.$Query"
         }
 
-        $Uri = "https://crt.sh/`?q=$Query&output=json"
+        $Uri = "https://crt.sh/`?q=$Query&output=json".ToLower()
     }
     Process {Search-Api}
     End {Reset-SslDefaults; Write-Verbose "Complete"}

@@ -30,7 +30,7 @@ function Search-Urlscan {
         Set-ModuleDefaults
 
         $ReponseType = "OBJ"
-        $Uri = "https://urlscan.io/api/v1/search/`?q=$Query&size=10000"
+        $Uri = "https://urlscan.io/api/v1/search/`?q=$Query&size=10000".ToLower()
     }
     Process {Search-Api}
     End {Reset-SslDefaults; Write-Verbose "Complete"}

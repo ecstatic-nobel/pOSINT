@@ -83,7 +83,7 @@
     ModuleList = @()
     
     # List of all files packaged with this module
-    FileList = @('pOSINT.psd1','pOSINT.psm1','Search-AlienVault.ps1','Search-Crtsh.ps1','Search-GreyNoise.ps1','Search-PhishingKitTracker.ps1','Search-PulseDive.ps1','Search-ThreatMiner.ps1','Search-Urlscan.ps1','Search-Censys.ps1','Search-Cymon.ps1','Search-HybridAnalysis.ps1','Search-ThreatCrowd.ps1','Search-Urlhaus.ps1','Search-VirusTotal.ps1')
+    FileList = @('pOSINT.psd1','pOSINT.psm1','Search-AlienVault.ps1','Search-Crtsh.ps1','Search-EmailRep.ps1','Search-GreyNoise.ps1','Search-PhishingKitTracker.ps1','Search-PulseDive.ps1','Search-ThreatMiner.ps1','Search-Urlscan.ps1','Search-Censys.ps1','Search-Cymon.ps1','Search-HybridAnalysis.ps1','Search-ThreatCrowd.ps1','Search-Urlhaus.ps1','Search-VirusTotal.ps1')
     
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
     PrivateData = @{
