@@ -105,4 +105,3 @@ function Search-Censys {
     Process {Search-Api}
     End {Reset-SslDefaults; Write-Verbose 'Complete'}
 }
-

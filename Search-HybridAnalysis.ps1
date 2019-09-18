@@ -125,4 +125,3 @@ function Search-HybridAnalysis {
     Process {Search-Api}
     End {Reset-SslDefaults; Write-Verbose 'Complete'}
 }
-

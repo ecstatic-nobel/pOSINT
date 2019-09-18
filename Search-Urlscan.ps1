@@ -35,4 +35,3 @@ function Search-Urlscan {
     Process {Search-Api}
     End {Reset-SslDefaults; Write-Verbose "Complete"}
 }
-
