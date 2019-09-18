@@ -73,4 +73,3 @@ function Search-GreyNoise {
     Process {Search-Api}
     End {Reset-SslDefaults; Write-Verbose "Complete"}
 }
-

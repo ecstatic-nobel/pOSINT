@@ -80,4 +80,3 @@ Function Set-SslDefaults {
     $global:CurrentSecurityProtocol = [Net.ServicePointManager]::SecurityProtocol
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls12
 }
-

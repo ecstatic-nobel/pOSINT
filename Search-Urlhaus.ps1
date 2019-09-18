@@ -55,4 +55,3 @@ function Search-Urlhaus {
     Process {Search-Api}
     End {Reset-SslDefaults; Write-Verbose "Complete"}
 }
-

@@ -40,4 +40,3 @@ function Search-PhishingKitTracker {
     Process {Search-Api }
     End {Reset-SslDefaults; Write-Verbose 'Complete'}
 }
-
