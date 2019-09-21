@@ -81,7 +81,7 @@ function Search-Censys {
         Set-ModuleDefaults
 
         $BaseUri = "https://censys.io/api/v1/$Endpoint"
-        $Credentials = "${Username}:${Secret}"
+        $Credentials = "${Uid}:${Secret}"
         $Base64 = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($Credentials))
         $Headers = "@{Authorization = 'Basic $Base64'}"
         $Uri = $BaseUri
