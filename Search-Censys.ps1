@@ -100,7 +100,6 @@ function Search-Censys {
                     query = $Query
                     page = $Page
                 }
-                #$Body = "@{query='$Query', page = '$Page'}"
                 $Method = 'POST'
             }
         }
