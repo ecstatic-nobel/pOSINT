@@ -73,7 +73,10 @@ function Search-Censys {
             #
             if ($Endpoint -eq 'view') {$True}
         })]
-        [string]$Id
+        [string]$Id,
+
+        [Parameter(Mandatory=$false)]
+        [int]$Page = 1
     )
     
     Begin {
@@ -93,13 +96,17 @@ function Search-Censys {
             if ($Id) {
                 $Uri = "$BaseUri/$Index/$Id"
             } else {
-                $Body = "@{query='$Query'}"
+                $Body = [PSCustomObject]@{
+                    query = $Query
+                    page = $Page
+                }
                 $Method = 'POST'
             }
         }
 
         if ($Body) {
-            $ExtraRequestParams = "-Body (ConvertTo-Json $Body) -Headers $Headers"
+            $b = (ConvertTo-Json $Body)
+            $ExtraRequestParams = "-Body '$b' -Headers $Headers"
         }
     }
     Process {Search-Api}
